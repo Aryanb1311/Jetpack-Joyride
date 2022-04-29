@@ -1,0 +1,35 @@
+import java.awt.GridLayout;
+
+import javax.swing.JFrame;
+
+public class Movement extends JFrame{
+	
+	public Movement() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setTitle("Player Movement");
+		setSize(400, 400);
+		setResizable(false);
+	
+		init();
+	}
+	
+	public void init() {
+		setLocationRelativeTo(null);
+		
+		setLayout(new GridLayout(1, 1, 0, 0));
+		
+		Screen s = new Screen();
+		
+		add(s);
+		
+		setVisible(true);
+		
+	}
+
+	public static void main(String[] args) {
+		Movement f = new Movement();
+
+	}
+
+}
+
